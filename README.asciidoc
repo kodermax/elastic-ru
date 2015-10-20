@@ -1,2 +1,4 @@
 # elastic-ru
 Документация на русском
+
+include::search-by-email.asciidoc[]
