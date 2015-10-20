@@ -30,3 +30,17 @@ PUT /portal {
 }
 }
 -------------------------
+Потом сделать mapping в таблицах
+[source,josn]
+--------------------
+"mappings": {
+  "lead": {
+    "properties": {
+      "emails": {
+        "type": "string",
+        "analyzer": "email"
+      }
+    }
+  }
+}
+--------------------
