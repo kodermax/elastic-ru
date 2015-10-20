@@ -30,18 +30,18 @@ PUT /portal {
 }
 }
 -------------------------
-Потом сделать mapping в таблицах
+Потом сделать mapping в таблицах, перед индексирование таблицы.
 [source,josn]
 --------------------
-PUT /lead/_mapping
-"mappings": {
-  "lead": {
+PUT /contact/_mapping
+{
+  "contact": {
     "properties": {
       "emails": {
         "type": "string",
         "analyzer": "email"
-      }
-    }
-  }
+       }
+     }
+   }
 }
 --------------------
