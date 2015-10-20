@@ -33,6 +33,7 @@ PUT /portal {
 Потом сделать mapping в таблицах
 [source,josn]
 --------------------
+PUT /lead/_mappings
 "mappings": {
   "lead": {
     "properties": {
